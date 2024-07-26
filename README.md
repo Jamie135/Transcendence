@@ -20,15 +20,15 @@ docker compose --env-file .db_secret.env up -d --build
 ```
 
 # Run with Django
-Copy settings_dev.py to /containers/django/simplified_prj/simplified_prj
-Then run these commands in /containers/django/simplified_prj:
+- Copy settings_dev.py to /containers/django/simplified_prj/simplified_prj
+- Then run these commands in /containers/django/simplified_prj:
 ```bash
 pyt -m venv .venv
 source .venv/bin/activate
 pip3 install -r ../requirements.txt
 export DJANGO_SETTINGS_MODULE=simplified_prj.settings_dev
 ```
-To disable the virtual environment, run this command:
+- To disable the virtual environment, run this command:
 ```bash
 deactivate
 ```
