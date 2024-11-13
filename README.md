@@ -16,7 +16,7 @@ tar -xf tran-secrets.tar
 ```
 Run this command:
 ```bash
-docker compose --env-file .db_secret.env up -d --build
+docker-compose --env-file .db_secret.env up -d --build
 ```
 
 # Run with Django
