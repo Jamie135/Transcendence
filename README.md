@@ -23,6 +23,10 @@ Run this command:
 ```bash
 docker-compose --env-file .db_secret.env up -d --build
 ```
+Navigate to the site:
+```bash
+https://localhost:42443
+```
 
 # Run with Django
 - Copy settings_dev.py to /containers/django/simplified_prj/simplified_prj
