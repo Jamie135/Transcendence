@@ -14,6 +14,11 @@ Extract tran-secrets.tar at the root:
 ```bash
 tar -xf tran-secrets.tar
 ```
+Check if HOST and PORT are defined in .env, if not add these two lines:
+```bash
+HOST=localhost  
+PORT=42443
+```
 Run this command:
 ```bash
 docker-compose --env-file .db_secret.env up -d --build
